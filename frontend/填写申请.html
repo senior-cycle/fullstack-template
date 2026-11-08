@@ -4,18 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>填写申请</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: auto;
+        }
+        th{
+            padding: 5px 30px;
+        }
+        table,th,td{
+            border: 1px solid #000;
+            text-align: center;
+        }
+        h2{
+            text-align: center;
+        }
+        td{
+            height: 40px;
+        }
+        
+    </style>
 </head>
-<body> 
-    <h1 style="text-align: center;">请填写信息</h1>
-    <form>
-        <span>姓名:</span>
-        <input type="text" placeholder="你的大名" name="id"><br><br>
-        <span>班级:</span>
-        <input type="text" placeholder="你的班级" name="class"><br><br>
-        <span>学号:</span>
-        <input type="password" placeholder="你的学号" name="idword"><br><br>
-        <input type="submit" value="确认">
-        <form action="#"></form>
-    </form>
+    
+    <script>
+      let uname = prompt('输入姓名')
+        let profession = prompt('你的专业？')
+       let uclass = prompt('你的班级')
+        let num = prompt('你的学号')
+        let howmuch = +prompt('要多少钱')
+        document.write(`
+        <body> 
+    <h2>信息</h2>
+       <table>
+        <tr>
+            <th>姓名</th>
+            <th>专业</th>
+            <th>班级</th>
+            <th>学号</th>
+            <th>申请费用</th>
+        </tr>
+         <tr>
+            <td>${uname}</td>
+            <td>${profession}</td>
+            <td>${uclass}</td>
+            <td>${num}</td>
+            <td>${howmuch}</td>
+        </tr>
+        </table>
+        `)
+
+    </script>
 </body>
 </html>
