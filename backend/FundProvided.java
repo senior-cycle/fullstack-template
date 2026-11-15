@@ -1,3 +1,5 @@
+package com.example.backend;
+
 public class FundProvided {
     public float Sum = 1000;
     public float total = Sum;
